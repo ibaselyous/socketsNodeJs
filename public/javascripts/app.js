@@ -6,3 +6,10 @@ var socket = io();
 socket.on('connect', function() {
    console.log("client is connected");
 });
+
+socket.on('message', function(message) {
+   console.log(message.text) ;
+});
+
+
+
